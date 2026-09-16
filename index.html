@@ -19,13 +19,14 @@
   </header>
   <main id="main">
     <section class="hero" id="top" aria-labelledby="hero-title">
-      <canvas id="starfield" aria-hidden="true"></canvas>
-      <div class="hero-layer hero-bg" data-depth="2"></div>
-      <img class="hero-layer city" data-depth="5" src="/assets/city-silhouette.png" alt="" />
-      <img class="hero-layer island island-one" data-depth="18" src="/assets/island-1.png" alt="" />
-      <img class="hero-layer island island-two" data-depth="10" src="/assets/island-2.png" alt="" />
-      <img class="hero-layer chain chain-one" data-depth="24" src="/assets/chain-1.png" alt="" />
-      <img class="hero-layer chain chain-two" data-depth="15" src="/assets/chain-2.png" alt="" />
+      <canvas id="starfield" data-plane="1" aria-hidden="true"></canvas>
+      <div class="hero-layer hero-bg" data-plane="1" data-depth="2"></div>
+      <img class="hero-layer city" data-plane="2" data-depth="5" src="/assets/city-silhouette.png" alt="" />
+      <img class="hero-layer island island-one" data-plane="3" data-depth="18" src="/assets/island-1.png" alt="" />
+      <img class="hero-layer island island-two" data-plane="3" data-depth="10" src="/assets/island-2.png" alt="" />
+      <img class="hero-layer chain chain-one" data-plane="4" data-depth="24" src="/assets/chain-1.png" alt="" />
+      <img class="hero-layer chain chain-two" data-plane="4" data-depth="15" src="/assets/chain-2.png" alt="" />
+      <div class="hero-mist" data-plane="5" aria-hidden="true"><span class="hero-beacon"></span></div>
       <div class="hero-vignette"></div>
       <div class="hero-copy">
         <p class="eyebrow">Hong Kong · Games &amp; Products</p>
