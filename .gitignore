@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.DS_Store
+*.local
+
+# working files / duplicates — not needed in the deploy repo
+.hermes/
+/assets/
+codex-*-output.txt
