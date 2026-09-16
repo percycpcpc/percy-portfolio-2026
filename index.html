@@ -66,12 +66,12 @@
     <section class="section skills-section" id="skills">
       <div class="section-heading"><p class="kicker">What I bring</p><h2>A constellation of craft</h2><p>Hover or tap an orb to bring a discipline into focus.</p></div>
       <div class="orb-cloud" role="list">
-        <button class="skill-orb" style="--x:8%;--y:12%;--delay:-1s" data-title="Game Design" data-description="Systems, loops, balance, and player psychology." role="listitem"><img src="/assets/orbs/game-design.png" alt=""><span>Game Design</span></button>
-        <button class="skill-orb" style="--x:38%;--y:3%;--delay:-3s" data-title="Mobile Products" data-description="Live ops, content pipelines, and monetization." role="listitem"><img src="/assets/orbs/mobile-products.png" alt=""><span>Mobile Products</span></button>
-        <button class="skill-orb" style="--x:69%;--y:14%;--delay:-5s" data-title="Web3 / NFT" data-description="Tokenomics, marketplaces, staking, and CEX/DEX listings." role="listitem"><img src="/assets/orbs/web3-nft.png" alt=""><span>Web3 / NFT</span></button>
-        <button class="skill-orb" style="--x:18%;--y:55%;--delay:-4s" data-title="AI Products" data-description="Agile delivery for AI-driven public-sector projects." role="listitem"><img src="/assets/orbs/ai-product.png" alt=""><span>AI Products</span></button>
-        <button class="skill-orb" style="--x:49%;--y:50%;--delay:-2s" data-title="Project Management" data-description="Scrum ceremonies, multi-team coordination, and client management." role="listitem"><img src="/assets/orbs/agile-pm.png" alt=""><span>Project Management</span></button>
-        <button class="skill-orb" style="--x:78%;--y:57%;--delay:-6s" data-title="Boardgames" data-description="Kickstarter self-publishing, tabletop systems, and awards." role="listitem"><img src="/assets/orbs/boardgames.png" alt=""><span>Boardgames</span></button>
+        <button class="skill-orb" style="--x:8%;--y:12%;--delay:-1s" data-title="Game Design" data-description="Systems, loops, balance, and player psychology."><img src="/assets/orbs/game-design.png" alt=""><span>Game Design</span></button>
+        <button class="skill-orb" style="--x:38%;--y:3%;--delay:-3s" data-title="Mobile Products" data-description="Live ops, content pipelines, and monetization."><img src="/assets/orbs/mobile-products.png" alt=""><span>Mobile Products</span></button>
+        <button class="skill-orb" style="--x:69%;--y:14%;--delay:-5s" data-title="Web3 / NFT" data-description="Tokenomics, marketplaces, staking, and CEX/DEX listings."><img src="/assets/orbs/web3-nft.png" alt=""><span>Web3 / NFT</span></button>
+        <button class="skill-orb" style="--x:18%;--y:55%;--delay:-4s" data-title="AI Products" data-description="Agile delivery for AI-driven public-sector projects."><img src="/assets/orbs/ai-product.png" alt=""><span>AI Products</span></button>
+        <button class="skill-orb" style="--x:49%;--y:50%;--delay:-2s" data-title="Project Management" data-description="Scrum ceremonies, multi-team coordination, and client management."><img src="/assets/orbs/agile-pm.png" alt=""><span>Project Management</span></button>
+        <button class="skill-orb" style="--x:78%;--y:57%;--delay:-6s" data-title="Boardgames" data-description="Kickstarter self-publishing, tabletop systems, and awards."><img src="/assets/orbs/boardgames.png" alt=""><span>Boardgames</span></button>
       </div>
       <div class="orb-detail" aria-live="polite"><span>Selected discipline</span><h3>Game Design</h3><p>Systems, loops, balance, and player psychology.</p></div>
     </section>
@@ -95,15 +95,14 @@
     <section class="section game-section" id="play">
       <div class="game-copy"><p class="kicker">Fun zone</p><h2>Claim the void</h2><p>Leave the cyan border, carve a path, and reconnect to capture territory. Avoid the gold spark while you’re drawing.</p>
         <div class="game-stats"><div><span>Score</span><strong id="game-score">0</strong></div><div><span>Time</span><strong id="game-time">30</strong></div><div><span>Claimed</span><strong id="game-claimed">0%</strong></div></div>
-        <div class="game-controls"><button id="game-start" class="button primary">Start 30-second run</button><p>Arrow keys / WASD · swipe or drag</p></div><p class="game-status" id="game-status" aria-live="polite">Ready when you are.</p>
+        <div class="game-controls"><div><button id="game-start" class="button primary">Start 30-second run</button><button id="game-preview" class="button" type="button">Preview</button></div><p>Arrow keys / WASD · swipe or drag</p></div><p class="game-status" id="game-status" aria-live="polite">Ready when you are.</p>
       </div>
       <div class="game-frame"><canvas id="qix-canvas" width="720" height="520" aria-label="Qix-style territory capture game" tabindex="0"></canvas><div class="touch-pad" aria-label="Touch controls"><button data-dir="up" aria-label="Move up">↑</button><button data-dir="left" aria-label="Move left">←</button><button data-dir="down" aria-label="Move down">↓</button><button data-dir="right" aria-label="Move right">→</button></div></div>
     </section>
 
     <section class="section contact-section" id="contact">
       <div><p class="kicker">Let’s make something memorable</p><h2>Have an ambitious idea?</h2><p>Games, products, systems, or something in between — I’d love to hear about it.</p><a href="mailto:percycpcpc@hotmail.com">percycpcpc@hotmail.com</a><a href="https://www.linkedin.com/in/chan-percy-4b69842a/" target="_blank" rel="noreferrer">LinkedIn →</a></div>
-      <form id="contact-form" novalidate><label>Name<input name="name" autocomplete="name" required minlength="2"><small></small></label><label>Email<input name="email" type="email" autocomplete="email" required><small></small></label><label>Message<textarea name="message" rows="5" required minlength="10"></textarea><small></small></label><button class="button primary" type="submit">Send message <span>→</span></button><p class="form-status" aria-live="polite"></p></form>
-      <canvas id="confetti" aria-hidden="true"></canvas>
+      <form id="contact-form" novalidate><label>Name<input name="name" autocomplete="name" required minlength="2"><small></small></label><label>Email<input name="email" type="email" autocomplete="email" required><small></small></label><label>Message<textarea name="message" rows="5" required minlength="10"></textarea><small></small></label><button class="button primary" type="submit">Open email draft</button><p class="form-status" aria-live="polite"></p></form>
     </section>
   </main>
   <footer><a class="brand" href="#top">PC</a><p>© 2026 Percy Chan. Designed with curiosity in Hong Kong.</p><div><a href="mailto:percycpcpc@hotmail.com">Email</a><a href="https://www.linkedin.com/in/chan-percy-4b69842a/" target="_blank" rel="noreferrer">LinkedIn</a></div></footer>
