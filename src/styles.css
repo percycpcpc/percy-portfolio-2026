@@ -39,8 +39,8 @@ nav a:hover, nav a:focus { color: var(--gold-light); }
 .hero { height: 100svh; min-height: 640px; position: relative; isolation: isolate; display: grid; place-items: center; overflow: hidden; background: #081029; }
 #starfield, .hero-layer, .hero-vignette, .hero-mist { position: absolute; pointer-events: none; }
 #starfield { z-index: -3; top: -35%; left: 0; width: 100%; height: 135%; }
-.hero-bg { z-index: -4; top: -35%; right: -3%; bottom: 0; left: -3%; background: url('/assets/hero-bg.jpg') center/cover no-repeat; }
-.city { z-index: -2; inset: -24% 0 0; width: 100%; height: 124%; object-fit: cover; object-position: center bottom; opacity: .82; }
+.hero-bg { z-index: -4; inset: 0; background: url('/assets/hero-bg.jpg') center/cover no-repeat; scale: 1.12; }
+.city { z-index: -2; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center bottom; opacity: .82; scale: 1.12; }
 .island, .chain { z-index: -1; object-fit: contain; }
 .island-one { width: 43%; height: auto; left: -8%; top: 33%; filter: drop-shadow(0 25px 25px rgba(0, 0, 0, .45)); }
 .island-two { width: 27%; height: auto; left: 76%; top: 17%; opacity: .9; }
