@@ -34,12 +34,3 @@ if (!reduced) {
     gsap.from(element, { opacity: 0, y: 36, duration: .9, ease: 'power3.out', scrollTrigger: { trigger: element, start: 'top 88%', once: true } });
   });
 }
-
-const typewriter = document.querySelector<HTMLElement>('.typewriter');
-if (typewriter) {
-  const text = typewriter.dataset.text ?? '';
-  if (reduced) typewriter.textContent = text;
-  else ScrollTrigger.create({ trigger: typewriter, start: 'top 82%', once: true, onEnter: () => {
-    let i = 0; const timer = window.setInterval(() => { typewriter.textContent = text.slice(0, ++i); if (i >= text.length) clearInterval(timer); }, 13);
-  }});
-}
